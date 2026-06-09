@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>ADAM10 · układy kart — wybierz jeden</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#03080e; --bg-deep:#020509; --white:#fff;
+    --gold:#c8a24c; --gold-soft:#ecd9a8; --gold-deep:#8c6d2c;
+    --ink:#2a1e05;
+    --ui:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    --serif:'Fraunces',Georgia,serif;
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg-deep);color:var(--white);font-family:var(--ui);font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
+
+  .ocean{position:fixed;inset:0;z-index:0;overflow:hidden;
+    background:radial-gradient(125% 80% at 50% -8%, #0a2330 0%, #051019 46%, #03080e 100%)}
+
+  .wrap{position:relative;z-index:2;max-width:430px;margin:0 auto;padding:0 20px 80px}
+
+  /* ——— pasek instrukcji ——— */
+  .topbar{text-align:center;padding:34px 0 6px}
+  .topbar .k{font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .topbar h1{font-weight:200;font-size:23px;margin-top:12px;line-height:1.2}
+  .topbar h1 i{font-family:var(--serif);font-style:italic;color:var(--gold);font-weight:400}
+  .topbar p{margin:12px auto 0;max-width:330px;font-size:13px;color:rgba(255,255,255,.6);line-height:1.6}
+
+  /* ——— etykieta wariantu ——— */
+  .vlabel{display:flex;align-items:center;gap:12px;margin:40px 0 4px}
+  .vlabel .n{flex-shrink:0;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-style:italic;font-size:16px;color:var(--gold-soft);border:1px solid rgba(236,217,168,.45);background:rgba(236,217,168,.06)}
+  .vlabel .t{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .vlabel .t small{display:block;letter-spacing:.01em;text-transform:none;font-size:11px;color:rgba(255,255,255,.5);font-weight:300;margin-top:3px}
+
+  /* ——— KARTA (z prawdziwej strony) ——— */
+  .pk{position:relative;display:block;margin-top:14px;border-radius:20px;overflow:hidden;min-height:280px;
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 18px 44px rgba(0,0,0,.5), 0 4px 12px rgba(0,0,0,.4)}
+  .pk-bg{position:absolute;inset:-7%;z-index:0;background-size:cover;background-position:center;
+    filter:saturate(1.04) contrast(1.03) brightness(.82);transform:scale(1.04)}
+  .pk-veil{position:absolute;inset:0;z-index:1;background:
+    linear-gradient(180deg, rgba(3,8,14,.5) 0%, rgba(3,8,14,.3) 28%, rgba(3,8,14,.58) 56%, rgba(3,8,14,.95) 100%)}
+  .pk.feat{border-color:rgba(236,217,168,.55);box-shadow:0 0 0 1px rgba(236,217,168,.3),0 26px 64px rgba(200,162,76,.18),0 18px 44px rgba(0,0,0,.55)}
+  .ribbon{position:absolute;top:16px;right:-34px;z-index:6;transform:rotate(45deg);
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:var(--ink);
+    font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 40px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+
+  .pk-content{position:relative;z-index:3;display:flex;flex-direction:column;height:100%;min-height:280px;padding:20px 22px}
+  .pk-coop{align-self:flex-start;font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.9);margin-bottom:10px}
+  .pk-title{font-weight:300;font-size:30px;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;color:var(--gold-soft)}
+  .pk-inc-label{font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(236,217,168,.9);font-weight:500;margin:14px 0 8px}
+  .pk-inc{list-style:none;display:grid;gap:6px}
+  .pk-inc.two{grid-template-columns:1fr 1fr;column-gap:16px;row-gap:8px}
+  .pk-inc li{display:flex;align-items:center;gap:9px;font-size:12px;color:rgba(255,255,255,.82);font-weight:300}
+  .pk-inc li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;box-shadow:0 0 8px rgba(236,217,168,.7)}
+
+  .new{font-family:var(--serif);font-style:italic;font-weight:400;font-size:34px;line-height:1;color:var(--gold-soft);font-variant-numeric:lining-nums tabular-nums}
+  .new .cur{font-family:var(--ui);font-style:normal;font-size:16px;font-weight:300;color:rgba(236,217,168,.82);vertical-align:.12em;margin-right:1px}
+  .perdive{font-family:var(--ui);font-size:11.5px;font-weight:300;color:rgba(255,255,255,.55);letter-spacing:.02em;font-variant-numeric:lining-nums}
+  .old{text-decoration:line-through;color:rgba(255,255,255,.42);font-size:14px;font-weight:300;font-variant-numeric:lining-nums}
+  .save{display:inline-flex;align-items:center;background:rgba(236,217,168,.13);border:1px solid rgba(236,217,168,.4);
+    color:var(--gold-soft);font-size:10px;font-weight:600;letter-spacing:.02em;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .book{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold) 55%,var(--gold-deep));color:var(--ink);border-radius:999px;padding:14px;
+    font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;box-shadow:0 10px 26px rgba(200,162,76,.28)}
+
+  /* ——— elementy specyficzne dla układów ——— */
+  /* A — posprzątany: tytuł, lista 2-kol, cena+dive razem */
+  .rowA{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 12px;margin-top:14px}
+  .rowA .perdive{align-self:baseline}
+  .rowA .save{align-self:center}
+
+  /* B — lewo/prawo: nagłówek tytuł|cena */
+  .head-split{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:auto;padding-top:12px}
+  .head-split .pk-title{margin:0}
+  .priceblock{text-align:right;flex-shrink:0}
+  .priceblock .perdive{display:block;margin-top:3px}
+  .subrow{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:13px}
+
+  /* C — minimal: jedna linia korzyści */
+  .allin{margin-top:12px;font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.78);font-weight:300}
+  .allin b{color:var(--gold-soft);font-weight:500}
+</style>
+</head>
+<body>
+  <div class="ocean"></div>
+  <div class="wrap">
+
+    <div class="topbar">
+      <div class="k">ADAM10 · układy kart</div>
+      <h1>Trzy sposoby na <i>jedną</i> kartę</h1>
+      <p>Ta sama karta (10 Dives), trzy ułożenia. Przewiń, popatrz, powiedz mi numer — wtedy ubieram tak wszystkie 4 pakiety.</p>
+    </div>
+
+    <!-- ============ UKŁAD 1 — POSPRZĄTANY ============ -->
+    <div class="vlabel">
+      <span class="n">1</span>
+      <span class="t">Posprzątany<small>Lista korzyści w 2 kolumnach · cena i €/dive razem na dole</small></span>
+    </div>
+    <div class="pk feat">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-10dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <div class="ribbon">Best value</div>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <div class="pk-title" style="margin-top:auto;padding-top:12px">10 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc two">
+          <li>Air &amp; weights</li>
+          <li>Drinking water</li>
+          <li>Site transport</li>
+          <li>PADI · SSI guide</li>
+        </ul>
+        <div class="rowA">
+          <span class="new"><span class="cur">&euro;</span>332.10</span>
+          <span class="perdive">&euro;33.21 / dive</span>
+          <span class="old">&euro;369</span>
+          <span class="save">save &euro;36.90</span>
+        </div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </div>
+
+    <!-- ============ UKŁAD 2 — LEWO / PRAWO ============ -->
+    <div class="vlabel">
+      <span class="n">2</span>
+      <span class="t">Lewo / prawo<small>Nazwa po lewej, duża cena po prawej · jak elegancki cennik</small></span>
+    </div>
+    <div class="pk feat">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-10dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <div class="ribbon">Best value</div>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <div class="head-split">
+          <div class="pk-title">10<br>Dives</div>
+          <div class="priceblock">
+            <span class="new"><span class="cur">&euro;</span>332.10</span>
+            <span class="perdive">&euro;33.21 / dive</span>
+          </div>
+        </div>
+        <div class="subrow"><span class="old">&euro;369</span><span class="save">save &euro;36.90</span></div>
+        <ul class="pk-inc two" style="margin-top:14px">
+          <li>Air &amp; weights</li>
+          <li>Drinking water</li>
+          <li>Site transport</li>
+          <li>PADI · SSI guide</li>
+        </ul>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </div>
+
+    <!-- ============ UKŁAD 3 — MINIMAL ============ -->
+    <div class="vlabel">
+      <span class="n">3</span>
+      <span class="t">Minimal<small>Bez listy punktów — jedna ciepła linia · najniższa karta, zdjęcie oddycha</small></span>
+    </div>
+    <div class="pk feat">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-10dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <div class="ribbon">Best value</div>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <div class="pk-title" style="margin-top:auto;padding-top:12px">10 Dives</div>
+        <div class="rowA">
+          <span class="new"><span class="cur">&euro;</span>332.10</span>
+          <span class="perdive">&euro;33.21 / dive</span>
+          <span class="old">&euro;369</span>
+          <span class="save">save &euro;36.90</span>
+        </div>
+        <p class="allin">Everything in: <b>air, weights, drinking water, transport &amp; your PADI / SSI guide.</b></p>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
