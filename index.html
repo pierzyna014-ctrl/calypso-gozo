@@ -186,7 +186,7 @@
 
     <div class="rv codecard">
       <div class="lbl">Your code</div>
-      <div class="code" id="code">ADAM10</div>
+      <div class="code" id="code">&nbsp;</div>
       <div class="sub">10% off dive packages</div>
       <button class="copybtn" id="copybtn" type="button"><span id="copytxt">Tap to copy</span></button>
       <a class="ratesbtn" href="https://www.calypsodivers.com/gozo-diving-prices-booking" target="_blank" rel="noopener">Or browse <b>all rates &amp; book &rarr;</b></a>
@@ -199,7 +199,7 @@
     </div>
 
     <!-- 10 dives — featured -->
-    <a class="rv pk feat" href="https://www.calypsodivers.com/product-page/10-dives-package-1" target="_blank" rel="noopener" aria-label="10 Dives Pack, best value, was 369 euro, now 332.10 euro with ADAM10. Book now.">
+    <a class="rv pk feat" href="https://www.calypsodivers.com/product-page/10-dives-package-1" target="_blank" rel="noopener" aria-label="10 Dives Pack, best value, was 369 euro, now 332.10 euro with the Stoney Cove rate. Book now.">
       <i class="pk-bg" style="background-image:url('assets/foto/adam-10dives.jpg')"></i>
       <div class="pk-veil"></div>
       <span class="glowfollow"></span>
@@ -222,7 +222,7 @@
     </a>
 
     <!-- 6 dives -->
-    <a class="rv pk" href="https://www.calypsodivers.com/product-page/6-dives-package-1" target="_blank" rel="noopener" aria-label="6 Dives Pack, was 240 euro, now 216 euro with ADAM10. Book now.">
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/6-dives-package-1" target="_blank" rel="noopener" aria-label="6 Dives Pack, was 240 euro, now 216 euro with the Stoney Cove rate. Book now.">
       <i class="pk-bg" style="background-image:url('assets/foto/adam-6dives.jpg')"></i>
       <div class="pk-veil"></div>
       <span class="pk-glint"></span>
@@ -243,7 +243,7 @@
     </a>
 
     <!-- 4 dives -->
-    <a class="rv pk" href="https://www.calypsodivers.com/product-page/4-dives-package-1" target="_blank" rel="noopener" aria-label="4 Dives Pack, was 169 euro, now 152.10 euro with ADAM10. Book now.">
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/4-dives-package-1" target="_blank" rel="noopener" aria-label="4 Dives Pack, was 169 euro, now 152.10 euro with the Stoney Cove rate. Book now.">
       <i class="pk-bg" style="background-image:url('assets/foto/adam-4dives.jpg')"></i>
       <div class="pk-veil"></div>
       <span class="pk-glint"></span>
@@ -264,7 +264,7 @@
     </a>
 
     <!-- family 40 -->
-    <a class="rv pk" href="https://www.calypsodivers.com/product-page/family-package-of-40-dives-1" target="_blank" rel="noopener" aria-label="Family 40 Dives, was 1390 euro, now 1251 euro with ADAM10. Book now.">
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/family-package-of-40-dives-1" target="_blank" rel="noopener" aria-label="Family 40 Dives, was 1390 euro, now 1251 euro with the Stoney Cove rate. Book now.">
       <i class="pk-bg" style="background-image:url('assets/foto/adam-family.jpg')"></i>
       <div class="pk-veil"></div>
       <span class="pk-glint"></span>
@@ -291,7 +291,7 @@
 
     <footer class="rv">
       <span class="ttl">How to claim your 10%</span>
-      <p>Tap <b>Book now</b>, add your package to the cart, and enter code <b>ADAM10</b> at checkout, your Stoney&nbsp;Cove rate. See you in the water.</p>
+      <p>Tap <b>Book now</b>, add your package to the cart, and enter code <b id="code2">&nbsp;</b> at checkout, your Stoney&nbsp;Cove rate. See you in the water.</p>
       <a class="morebtn" href="https://www.calypsodivers.com" target="_blank" rel="noopener">More about us &middot; <b>calypsodivers.com &rarr;</b></a>
     </footer>
   </div>
@@ -311,11 +311,14 @@
     }
   })();
   (function(){
+    var C=atob('QURBTTEw'); /* code stored encoded, not in plain text */
+    var el=document.getElementById('code'); if(el){ el.textContent=C; }
+    var el2=document.getElementById('code2'); if(el2){ el2.textContent=C; }
     var btn=document.getElementById('copybtn'), txt=document.getElementById('copytxt');
     btn.addEventListener('click',function(){
       var done=function(){ txt.textContent='Copied'; setTimeout(function(){txt.textContent='Tap to copy';},1800); };
-      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText('ADAM10').then(done).catch(done); }
-      else{ var t=document.createElement('textarea'); t.value='ADAM10'; document.body.appendChild(t); t.select();
+      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(C).then(done).catch(done); }
+      else{ var t=document.createElement('textarea'); t.value=C; document.body.appendChild(t); t.select();
         try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
     });
   })();
