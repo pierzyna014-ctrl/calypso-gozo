@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Calypso Diving · Stoney Cove Insider Rate</title>
+<meta name="description" content="A little something from Adam for the Stoney Cove crew."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#03080e; --bg-deep:#020509; --white:#fff;
+    --gold:#c8a24c; --gold-soft:#ecd9a8; --gold-deep:#8c6d2c;
+    --ink:#2a1e05;
+    --ui:'Inter','Neue Haas Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+    --serif:'Fraunces','Cormorant Garamond',Georgia,serif;
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg-deep);color:var(--white);font-family:var(--ui);font-weight:300;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+  body::before{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:240px}
+
+  .ocean{position:fixed;inset:0;z-index:0;overflow:hidden;
+    background:radial-gradient(125% 80% at 50% -8%, #0a2330 0%, #051019 46%, #03080e 100%)}
+  .ocean::after{content:"";position:absolute;inset:0;mix-blend-mode:screen;background:
+    radial-gradient(60% 48% at 28% 4%, rgba(236,217,168,.1), transparent 60%),
+    radial-gradient(52% 42% at 84% 12%, rgba(125,211,192,.05), transparent 60%)}
+  .bubbles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .bubbles span{position:absolute;bottom:-40px;border-radius:50%;
+    background:radial-gradient(circle at 32% 30%, rgba(255,255,255,.4), rgba(236,217,168,.05));
+    animation:rise linear infinite}
+  @keyframes rise{0%{transform:translateY(0);opacity:0}12%{opacity:.5}100%{transform:translateY(-112vh);opacity:0}}
+
+  .wrap{position:relative;z-index:2;max-width:430px;margin:0 auto;padding:0 20px 96px}
+
+  header{text-align:center;padding:42px 0 4px}
+  .logo{display:block;width:120px;height:auto;margin:0 auto;
+    filter:drop-shadow(0 8px 30px rgba(0,0,0,.55)) drop-shadow(0 0 34px rgba(236,217,168,.18))}
+
+  .eyebrow{display:flex;align-items:center;justify-content:center;gap:13px;color:var(--gold);
+    font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;font-weight:400}
+  .eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:rgba(236,217,168,.5)}
+
+  .hero{text-align:center;margin-top:30px}
+  .hero h1{font-weight:200;font-size:34px;line-height:1.12;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance}
+  .hero h1 i{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--gold);text-transform:none;letter-spacing:-.005em}
+  .hero p{margin:16px auto 0;max-width:330px;color:rgba(255,255,255,.74);font-weight:300;font-size:15px;line-height:1.65;text-wrap:pretty}
+  .hero p b{color:var(--gold-soft);font-weight:500}
+
+  /* uklon — logo Stoney Cove w hero (Calypso prowadzi, subtelny gest) */
+  .coop{margin:24px auto 0;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .coop .lbl{font-size:8.5px;letter-spacing:.36em;text-transform:uppercase;color:rgba(255,255,255,.42);font-weight:400}
+  .coop img{width:122px;height:auto;opacity:.9;filter:drop-shadow(0 4px 18px rgba(0,0,0,.55))}
+
+  /* CODE CARD (glass, gold glow) */
+  .codecard{position:relative;margin:30px 0 6px;border-radius:20px;padding:26px 22px 22px;text-align:center;overflow:hidden;
+    background:rgba(10,20,30,.46);border:1px solid rgba(236,217,168,.42);
+    backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 20px 50px rgba(0,0,0,.45)}
+  .codecard::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:20px;
+    background:radial-gradient(120% 80% at 50% 0%, rgba(236,217,168,.2), transparent 62%);animation:glow 3.6s ease-in-out infinite}
+  @keyframes glow{0%,100%{opacity:.5}50%{opacity:1}}
+  .codecard .lbl{position:relative;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:400}
+  .codecard .code{position:relative;font-family:var(--serif);font-style:italic;font-weight:400;font-size:48px;letter-spacing:.01em;color:var(--gold-soft);margin:8px 0 3px;line-height:1;font-variant-numeric:lining-nums}
+  .codecard .sub{position:relative;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .copybtn{position:relative;margin-top:18px;display:inline-flex;gap:9px;align-items:center;cursor:pointer;
+    border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;
+    border-radius:999px;padding:12px 24px;font-family:var(--ui);font-size:10px;letter-spacing:.26em;text-transform:uppercase;font-weight:400;
+    transition:background .35s var(--ease-out),border-color .35s var(--ease-out),transform .16s var(--ease-out)}
+  .copybtn:hover{background:rgba(236,217,168,.16);border-color:rgba(236,217,168,.55)}
+  .copybtn:active{transform:scale(.97)}
+  .ratesbtn{position:relative;display:block;margin-top:12px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:400}
+  .ratesbtn b{color:var(--gold);font-weight:500}
+
+  .pickhead{text-align:center;margin:44px 0 6px}
+  .pickhead h2{font-weight:200;font-size:24px;letter-spacing:.02em;text-transform:uppercase;margin-top:16px}
+  .pickhead h2 i{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--gold);text-transform:none}
+  .pickhead p{margin-top:9px;font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;letter-spacing:.01em}
+
+  /* PACKAGE CARDS — full photo, gold accents, layered depth */
+  .pk{position:relative;display:block;margin-top:18px;border-radius:20px;overflow:hidden;min-height:348px;
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 18px 44px rgba(0,0,0,.5), 0 4px 12px rgba(0,0,0,.4);
+    transition:transform .5s var(--ease-out),border-color .5s var(--ease-out),box-shadow .5s var(--ease-out)}
+  .pk:active{transform:scale(.99)}
+  @media(hover:hover) and (pointer:fine){
+    .pk:hover{transform:translateY(-5px);border-color:rgba(236,217,168,.5);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 34px 70px rgba(0,0,0,.6),0 0 0 1px rgba(236,217,168,.25),0 0 50px rgba(200,162,76,.16)}
+    .pk:hover .pk-bg{filter:saturate(1.12) contrast(1.04) brightness(1.0)}
+  }
+  .pk-bg{position:absolute;inset:-7%;z-index:0;background-size:cover;background-position:center;
+    filter:saturate(1.04) contrast(1.03) brightness(.84);
+    transform:scale(1.04);animation:kb 22s ease-in-out infinite alternate;will-change:transform;transition:filter .5s var(--ease-out)}
+  @keyframes kb{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.13) translate(-2%,-1.5%)}}
+  .pk-veil{position:absolute;inset:0;z-index:1;background:
+    linear-gradient(180deg, rgba(3,8,14,.5) 0%, rgba(3,8,14,.3) 28%, rgba(3,8,14,.55) 56%, rgba(3,8,14,.95) 100%)}
+  .pk-glint{position:absolute;top:0;left:-65%;width:48%;height:100%;z-index:5;pointer-events:none;opacity:0;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent);transform:skewX(-16deg)}
+  .pk.show .pk-glint{animation:sheen 1.2s var(--ease-out) .25s 1}
+  @keyframes sheen{0%{left:-65%;opacity:0}26%{opacity:1}100%{left:135%;opacity:0}}
+
+  .pk-content{position:relative;z-index:3;display:flex;flex-direction:column;height:100%;min-height:348px;padding:22px 22px 24px}
+  .pk-coop{align-self:flex-start;font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--gold);opacity:.92;margin-bottom:10px}
+  .pk-rate{align-self:flex-start;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;font-weight:400;color:var(--gold)}
+  .pk-title{font-weight:200;font-size:30px;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;color:#fff;margin-top:auto;padding-top:16px}
+  .pk-inc-label{font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(236,217,168,.9);font-weight:500;margin:14px 0 8px}
+  .pk-inc{list-style:none;display:grid;gap:6px}
+  .pk-inc li{display:flex;align-items:center;gap:9px;font-size:12px;color:rgba(255,255,255,.8);font-weight:300}
+  .pk-inc li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;box-shadow:0 0 8px rgba(236,217,168,.7)}
+  .pricerow{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;margin-top:18px}
+  .old{color:rgba(255,255,255,.45);text-decoration:line-through;font-size:15px;font-weight:300;font-variant-numeric:lining-nums}
+  .new{font-family:var(--serif);font-style:italic;font-weight:400;font-size:40px;line-height:1;color:var(--gold-soft);letter-spacing:0;font-variant-numeric:lining-nums tabular-nums}
+  .new .cur{font-family:var(--ui);font-style:normal;font-size:18px;font-weight:300;color:rgba(236,217,168,.82);vertical-align:.2em;margin-right:1px}
+  .save{margin-left:auto;align-self:center;background:rgba(236,217,168,.14);border:1px solid rgba(236,217,168,.42);
+    color:var(--gold-soft);font-size:10.5px;font-weight:500;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap}
+  .book{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold) 55%,var(--gold-deep));color:var(--ink);border-radius:999px;padding:14px;
+    font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    box-shadow:0 10px 26px rgba(200,162,76,.28);transition:filter .3s var(--ease-out),transform .16s var(--ease-out),box-shadow .3s var(--ease-out)}
+  .book::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-18deg);animation:bs 5s var(--ease-out) infinite}
+  @keyframes bs{0%,58%{left:-120%}82%,100%{left:160%}}
+  .book:active{transform:scale(.98)}
+  @media(hover:hover) and (pointer:fine){.book:hover{filter:brightness(1.06);transform:translateY(-1px);box-shadow:0 14px 30px rgba(200,162,76,.34)}}
+
+  .pk.feat{border-color:rgba(236,217,168,.55);box-shadow:0 0 0 1px rgba(236,217,168,.3),0 26px 64px rgba(200,162,76,.18),0 18px 44px rgba(0,0,0,.55)}
+  .pk.feat .glowfollow{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .4s var(--ease-out);
+    background:radial-gradient(220px 220px at var(--mx,50%) var(--my,30%), rgba(236,217,168,.2), transparent 70%)}
+  @media(hover:hover) and (pointer:fine){.pk.feat:hover .glowfollow{opacity:1}}
+  .ribbon{position:absolute;top:16px;right:-34px;z-index:6;transform:rotate(45deg);
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:var(--ink);
+    font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 40px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+
+  .trust{text-align:center;margin:40px 6px 0;color:rgba(255,255,255,.7);font-size:13px;line-height:1.75;font-weight:300}
+  .trust b{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--gold-soft);font-size:17px}
+
+  footer{margin-top:30px;border-radius:18px;padding:24px 22px;text-align:center;
+    background:rgba(10,20,30,.46);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  footer .ttl{display:block;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:500}
+  footer p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.72);font-weight:300}
+  footer p b{color:var(--gold-soft);font-weight:500}
+  .morebtn{display:inline-block;margin-top:16px;padding-top:15px;border-top:1px solid rgba(236,217,168,.18);
+    font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.6);font-weight:300;transition:color .3s var(--ease-out)}
+  .morebtn b{color:var(--gold);font-weight:500}
+  .morebtn:hover{color:rgba(255,255,255,.85)}
+
+  .demo{position:fixed;left:0;right:0;bottom:0;z-index:9000;text-align:center;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.12em;
+    padding:8px 10px;text-transform:uppercase}
+
+  .rv{opacity:0;transform:translateY(26px);filter:blur(4px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out),filter .9s var(--ease-out)}
+  .rv.show{opacity:1;transform:none;filter:none}
+  @media(prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;filter:none;transition:none}
+    .bubbles,.codecard::before,.pk-bg,.book::after,.pk.show .pk-glint{animation:none}
+    .pk-glint{display:none}
+  }
+</style>
+</head>
+<body>
+  <div class="ocean"></div>
+  <div class="bubbles" id="bubbles"></div>
+
+  <div class="wrap">
+    <header>
+      <img class="rv logo" src="assets/logo.png" alt="Calypso Diving Centre, Gozo Malta, established 1985"/>
+    </header>
+
+    <section class="hero">
+      <div class="rv eyebrow">Stoney Cove insider rate</div>
+      <h1 class="rv">Our Adam sorted you<br>a little <i>something</i>.</h1>
+      <p class="rv">Diving Gozo this season? You've got <b>10% off</b> our dive packages, just for the Stoney crew. The blue's waiting.</p>
+      <div class="rv coop">
+        <span class="lbl">Exclusively for</span>
+        <img src="assets/stoney-cove-logo.png" alt="Dive &amp; Swim Stoney Cove"/>
+      </div>
+    </section>
+
+    <div class="rv codecard">
+      <div class="lbl">Your code</div>
+      <div class="code" id="code">ADAM10</div>
+      <div class="sub">10% off dive packages</div>
+      <button class="copybtn" id="copybtn" type="button"><span id="copytxt">Tap to copy</span></button>
+      <a class="ratesbtn" href="https://www.calypsodivers.com/gozo-diving-prices-booking" target="_blank" rel="noopener">Or browse <b>all rates &amp; book &rarr;</b></a>
+    </div>
+
+    <div class="pickhead">
+      <div class="rv eyebrow">Pick your pack</div>
+      <h2 class="rv">Guided <i>dive</i> packages</h2>
+      <p class="rv">Every price below already includes your 10%.</p>
+    </div>
+
+    <!-- 10 dives — featured -->
+    <a class="rv pk feat" href="https://www.calypsodivers.com/product-page/10-dives-package-1" target="_blank" rel="noopener" aria-label="10 Dives Pack, best value, was 369 euro, now 332.10 euro with ADAM10. Book now.">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-10dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="glowfollow"></span>
+      <span class="pk-glint"></span>
+      <div class="ribbon">Best value</div>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <span class="pk-rate">&euro;33.21 / dive</span>
+        <div class="pk-title">10 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air, weights &amp; cylinder</li>
+          <li>Drinking water every dive</li>
+          <li>Transport to all dive sites</li>
+          <li>Your PADI / SSI guide</li>
+        </ul>
+        <div class="pricerow"><span class="old">&euro;369</span><span class="new"><span class="cur">&euro;</span>332.10</span><span class="save">save &euro;36.90</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 6 dives -->
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/6-dives-package-1" target="_blank" rel="noopener" aria-label="6 Dives Pack, was 240 euro, now 216 euro with ADAM10. Book now.">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-6dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="pk-glint"></span>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <span class="pk-rate">&euro;36 / dive</span>
+        <div class="pk-title">6 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air, weights &amp; cylinder</li>
+          <li>Drinking water every dive</li>
+          <li>Transport to all dive sites</li>
+          <li>Your PADI / SSI guide</li>
+        </ul>
+        <div class="pricerow"><span class="old">&euro;240</span><span class="new"><span class="cur">&euro;</span>216.00</span><span class="save">save &euro;24.00</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 4 dives -->
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/4-dives-package-1" target="_blank" rel="noopener" aria-label="4 Dives Pack, was 169 euro, now 152.10 euro with ADAM10. Book now.">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-4dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="pk-glint"></span>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <span class="pk-rate">&euro;38 / dive</span>
+        <div class="pk-title">4 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air, weights &amp; cylinder</li>
+          <li>Drinking water every dive</li>
+          <li>Transport to all dive sites</li>
+          <li>Your PADI / SSI guide</li>
+        </ul>
+        <div class="pricerow"><span class="old">&euro;169</span><span class="new"><span class="cur">&euro;</span>152.10</span><span class="save">save &euro;16.90</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <!-- family 40 -->
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/family-package-of-40-dives-1" target="_blank" rel="noopener" aria-label="Family 40 Dives, was 1390 euro, now 1251 euro with ADAM10. Book now.">
+      <i class="pk-bg" style="background-image:url('assets/foto/adam-family.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="pk-glint"></span>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for Stoney&nbsp;Cove divers</span>
+        <span class="pk-rate">&euro;31.28 / dive</span>
+        <div class="pk-title">Family &middot; 40 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air, weights &amp; cylinder</li>
+          <li>Drinking water every dive</li>
+          <li>Transport to all dive sites</li>
+          <li>Shared across your whole crew</li>
+        </ul>
+        <div class="pricerow"><span class="old">&euro;1390</span><span class="new"><span class="cur">&euro;</span>1251.00</span><span class="save">save &euro;139.00</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <p class="rv trust">
+      <b>Diving Gozo since 1985.</b><br>
+      SSI &amp; PADI &middot; a small, friendly crew &middot; the Mediterranean at its best.
+    </p>
+
+    <footer class="rv">
+      <span class="ttl">How to claim your 10%</span>
+      <p>Tap <b>Book now</b>, add your package to the cart, and enter code <b>ADAM10</b> at checkout, your Stoney&nbsp;Cove rate. See you in the water.</p>
+      <a class="morebtn" href="https://www.calypsodivers.com" target="_blank" rel="noopener">More about us &middot; <b>calypsodivers.com &rarr;</b></a>
+    </footer>
+  </div>
+
+
+<script>
+  (function(){
+    var b=document.getElementById('bubbles');
+    for(var i=0;i<14;i++){
+      var s=document.createElement('span');
+      var size=5+(i*1.7)%24;
+      s.style.width=s.style.height=size+'px';
+      s.style.left=(i*7+3)+'%';
+      s.style.animationDuration=(8+(i%6)*2)+'s';
+      s.style.animationDelay=(i*0.7)+'s';
+      b.appendChild(s);
+    }
+  })();
+  (function(){
+    var btn=document.getElementById('copybtn'), txt=document.getElementById('copytxt');
+    btn.addEventListener('click',function(){
+      var done=function(){ txt.textContent='Copied'; setTimeout(function(){txt.textContent='Tap to copy';},1800); };
+      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText('ADAM10').then(done).catch(done); }
+      else{ var t=document.createElement('textarea'); t.value='ADAM10'; document.body.appendChild(t); t.select();
+        try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
+    });
+  })();
+  (function(){
+    var items=document.querySelectorAll('.rv');
+    if(!('IntersectionObserver' in window)){ items.forEach(function(el){el.classList.add('show');}); return; }
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+    },{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    items.forEach(function(el,i){ el.style.transitionDelay=((i%4)*80)+'ms'; io.observe(el); });
+  })();
+  (function(){
+    var f=document.querySelector('.pk.feat');
+    if(!f||!window.matchMedia||!matchMedia('(hover:hover)').matches)return;
+    f.addEventListener('pointermove',function(e){
+      var r=f.getBoundingClientRect();
+      f.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+      f.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+    });
+  })();
+</script>
+</body>
+</html>
