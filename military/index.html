@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="color-scheme" content="dark"/>
+<!-- Ukrycie przed Google/Bing zalatwia robots.txt (przepuszcza roboty Meta/WhatsApp). Zadnego meta "robots/noindex" w HTML — WhatsApp odmawia wtedy podgladu. -->
+<title>Calypso Diving · Military Divers Rate</title>
+<meta name="description" content="A little something from Adam for military divers."/>
+<!-- Link preview (WhatsApp / Messenger / iMessage) -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://adam.calypsodivers.com/military"/>
+<meta property="og:title" content="Dive beneath the surface with Calypso"/>
+<meta property="og:description" content="Enjoy 10% off diving in Gozo. Your military divers rate. Tap for your code."/>
+<meta property="og:image" content="https://adam.calypsodivers.com/assets/share-military.jpg"/>
+<meta property="og:image:secure_url" content="https://adam.calypsodivers.com/assets/share-military.jpg"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Calypso Diving Centre, Gozo, 10% off for military divers"/>
+<meta property="og:site_name" content="Calypso Diving Centre, Gozo"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Dive beneath the surface with Calypso"/>
+<meta name="twitter:description" content="Enjoy 10% off diving in Gozo. Your military divers rate."/>
+<meta name="twitter:image" content="https://adam.calypsodivers.com/assets/share-military.jpg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#03080e; --bg-deep:#020509; --white:#fff;
+    --gold:#c8a24c; --gold-soft:#ecd9a8; --gold-deep:#8c6d2c;
+    --ink:#2a1e05;
+    --ui:'Inter','Neue Haas Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+    --serif:'Fraunces','Cormorant Garamond',Georgia,serif;
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;color-scheme:dark}
+  body{background:var(--bg-deep);color:var(--white);font-family:var(--ui);font-weight:300;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+  body::before{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:240px}
+
+  .ocean{position:fixed;inset:0;z-index:0;overflow:hidden;
+    background:radial-gradient(125% 80% at 50% -8%, #0a2330 0%, #051019 46%, #03080e 100%)}
+  .ocean::after{content:"";position:absolute;inset:0;mix-blend-mode:screen;background:
+    radial-gradient(60% 48% at 28% 4%, rgba(236,217,168,.1), transparent 60%),
+    radial-gradient(52% 42% at 84% 12%, rgba(125,211,192,.05), transparent 60%)}
+
+  .bubbles{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+  .bubbles span{position:absolute;bottom:-8vh;border-radius:50%;
+    background:radial-gradient(circle at 30% 26%, rgba(255,255,255,.6), rgba(255,255,255,.1) 44%, rgba(150,200,215,.05) 72%);
+    box-shadow:inset 0 0 6px rgba(255,255,255,.22), 0 0 9px rgba(180,220,235,.07);
+    animation:rise linear infinite}
+  @keyframes rise{
+    0%{transform:translate(0,0) scale(.92);opacity:0}
+    12%{opacity:.6}
+    55%{transform:translate(10px,-58vh) scale(1);opacity:.46}
+    100%{transform:translate(-8px,-115vh) scale(1.04);opacity:0}}
+
+  .wrap{position:relative;z-index:2;max-width:430px;margin:0 auto;padding:0 20px 96px}
+
+  header{text-align:center;padding:42px 0 4px}
+  .logo{display:block;width:168px;height:auto;margin:0 auto;
+    filter:drop-shadow(0 8px 30px rgba(0,0,0,.55)) drop-shadow(0 0 34px rgba(236,217,168,.18))}
+
+  .eyebrow{display:flex;align-items:center;justify-content:center;gap:13px;color:var(--gold);
+    font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;font-weight:400}
+  .eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:rgba(236,217,168,.5)}
+
+  .hero{text-align:center;margin-top:30px}
+  .hero h1{font-weight:200;font-size:34px;line-height:1.12;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance}
+  .hero h1 i{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--gold);text-transform:none;letter-spacing:-.005em}
+  .hero p{margin:16px auto 0;max-width:330px;color:rgba(255,255,255,.74);font-weight:300;font-size:15px;line-height:1.65;text-wrap:pretty}
+  .hero p b{color:var(--gold-soft);font-weight:500}
+
+  /* uklon — tekst w hero (Calypso prowadzi, subtelny gest; bez obcych logotypow) */
+  .coop{margin:24px auto 0;display:flex;flex-direction:column;align-items:center;gap:9px}
+  .coop .lbl{font-size:8.5px;letter-spacing:.36em;text-transform:uppercase;color:rgba(255,255,255,.42);font-weight:400}
+  .coop .name{font-family:var(--serif);font-style:italic;font-weight:400;font-size:24px;line-height:1.2;color:var(--gold-soft);letter-spacing:.005em;text-align:center}
+
+  /* CODE CARD (glass, gold glow) */
+  .codecard{position:relative;margin:30px 0 6px;border-radius:20px;padding:26px 22px 22px;text-align:center;overflow:hidden;
+    background:rgba(10,20,30,.46);border:1px solid rgba(236,217,168,.42);
+    backdrop-filter:blur(10px) saturate(1.25);-webkit-backdrop-filter:blur(10px) saturate(1.25);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 20px 50px rgba(0,0,0,.45)}
+  .codecard::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:20px;
+    background:radial-gradient(120% 80% at 50% 0%, rgba(236,217,168,.2), transparent 62%);animation:glow 3.6s ease-in-out infinite}
+  @keyframes glow{0%,100%{opacity:.5}50%{opacity:1}}
+  .codecard .lbl{position:relative;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:400}
+  .codecard .code{position:relative;font-family:var(--serif);font-style:italic;font-weight:400;font-size:48px;letter-spacing:.01em;color:var(--gold-soft);margin:8px 0 3px;line-height:1;font-variant-numeric:lining-nums}
+  .codecard .sub{position:relative;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .copybtn{position:relative;margin-top:18px;display:inline-flex;gap:9px;align-items:center;cursor:pointer;
+    border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;
+    border-radius:999px;padding:15px 26px;min-height:46px;font-family:var(--ui);font-size:10px;letter-spacing:.26em;text-transform:uppercase;font-weight:400;
+    transition:background .35s var(--ease-out),border-color .35s var(--ease-out),transform .16s var(--ease-out)}
+  .copybtn:hover{background:rgba(236,217,168,.16);border-color:rgba(236,217,168,.55)}
+  .copybtn:active{transform:scale(.97)}
+  .ratesbtn{position:relative;display:block;margin-top:12px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:400}
+  .ratesbtn b{color:var(--gold);font-weight:500}
+
+  .pickhead{text-align:center;margin:44px 0 6px}
+  .pickhead h2{font-weight:200;font-size:24px;letter-spacing:.02em;text-transform:uppercase;margin-top:16px}
+  .pickhead h2 i{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--gold);text-transform:none}
+  .pickhead p{margin-top:9px;font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;letter-spacing:.01em}
+
+  /* PACKAGE CARDS — full photo, gold accents, layered depth */
+  .pk{position:relative;display:block;margin-top:16px;border-radius:20px;overflow:hidden;min-height:258px;
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 18px 44px rgba(0,0,0,.5), 0 4px 12px rgba(0,0,0,.4);
+    transition:transform .5s var(--ease-out),border-color .5s var(--ease-out),box-shadow .5s var(--ease-out)}
+  .pk:active{transform:scale(.99)}
+  @media(hover:hover) and (pointer:fine){
+    .pk:hover{transform:translateY(-5px);border-color:rgba(236,217,168,.5);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 34px 70px rgba(0,0,0,.6),0 0 0 1px rgba(236,217,168,.25),0 0 50px rgba(200,162,76,.16)}
+    .pk:hover .pk-bg{filter:saturate(1.08) contrast(1.05) brightness(.82)}
+  }
+  .pk-bg{position:absolute;inset:-7%;z-index:0;background-size:cover;background-position:center;
+    filter:saturate(1.02) contrast(1.04) brightness(.72);
+    transform:scale(1.04);animation:kb 22s ease-in-out infinite alternate;will-change:transform;transition:filter .5s var(--ease-out)}
+  @keyframes kb{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.13) translate(-2%,-1.5%)}}
+  .pk-veil{position:absolute;inset:0;z-index:1;background:
+    linear-gradient(180deg, rgba(3,8,14,.6) 0%, rgba(3,8,14,.42) 28%, rgba(3,8,14,.64) 56%, rgba(3,8,14,.96) 100%)}
+  .pk-glint{position:absolute;top:0;left:-65%;width:48%;height:100%;z-index:5;pointer-events:none;opacity:0;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent);transform:skewX(-16deg)}
+  .pk.show .pk-glint{animation:sheen 1.2s var(--ease-out) .25s 1}
+  @keyframes sheen{0%{left:-65%;opacity:0}26%{opacity:1}100%{left:135%;opacity:0}}
+
+  .pk-content{position:relative;z-index:3;display:flex;flex-direction:column;height:100%;min-height:258px;padding:18px 22px 18px}
+  .pk-coop{align-self:flex-start;font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.9);margin-bottom:9px}
+  .pk-toprow{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .pk-rate{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;font-weight:400;color:rgba(255,255,255,.6)}
+  .pk-title{font-weight:300;font-size:30px;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;color:var(--gold-soft);margin-top:auto;padding-top:12px}
+  .pk-inc-label{font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(236,217,168,.9);font-weight:500;margin:12px 0 7px}
+  .pk-inc{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:16px;row-gap:7px}
+  .pk-inc li{display:flex;align-items:center;gap:9px;font-size:12px;color:rgba(255,255,255,.8);font-weight:300}
+  .pk-inc li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;box-shadow:0 0 8px rgba(236,217,168,.7)}
+  .pricerow{display:flex;align-items:baseline;gap:10px;margin-top:12px}
+  .new{font-family:var(--serif);font-style:italic;font-weight:400;font-size:34px;line-height:1;color:var(--gold-soft);letter-spacing:0;font-variant-numeric:lining-nums tabular-nums}
+  .new .cur{font-family:var(--ui);font-style:normal;font-size:16px;font-weight:300;color:rgba(236,217,168,.82);vertical-align:.12em;margin-right:1px}
+  .old{text-decoration:line-through;text-decoration-color:rgba(255,255,255,.5);color:rgba(255,255,255,.58);font-size:15px;font-weight:300;font-variant-numeric:lining-nums}
+  .save{display:inline-flex;align-items:center;background:rgba(236,217,168,.13);border:1px solid rgba(236,217,168,.4);
+    color:var(--gold-soft);font-size:10px;font-weight:600;letter-spacing:.04em;padding:4px 10px;border-radius:999px;white-space:nowrap}
+  .book{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold) 55%,var(--gold-deep));color:var(--ink);border-radius:999px;padding:14px;
+    font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    box-shadow:0 10px 26px rgba(200,162,76,.28);transition:filter .3s var(--ease-out),transform .16s var(--ease-out),box-shadow .3s var(--ease-out)}
+  .book::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-18deg);animation:bs 5s var(--ease-out) infinite}
+  @keyframes bs{0%,58%{left:-120%}82%,100%{left:160%}}
+  .book:active{transform:scale(.98)}
+  @media(hover:hover) and (pointer:fine){.book:hover{filter:brightness(1.06);transform:translateY(-1px);box-shadow:0 14px 30px rgba(200,162,76,.34)}}
+
+  .pk.feat{border-color:rgba(236,217,168,.55);box-shadow:0 0 0 1px rgba(236,217,168,.3),0 26px 64px rgba(200,162,76,.18),0 18px 44px rgba(0,0,0,.55)}
+  .pk.feat .glowfollow{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .4s var(--ease-out);
+    background:radial-gradient(220px 220px at var(--mx,50%) var(--my,30%), rgba(236,217,168,.2), transparent 70%)}
+  @media(hover:hover) and (pointer:fine){.pk.feat:hover .glowfollow{opacity:1}}
+  .ribbon{position:absolute;top:16px;right:-34px;z-index:6;transform:rotate(45deg);
+    background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:var(--ink);
+    font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 40px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+
+  .trust{text-align:center;margin:40px 6px 0;color:rgba(255,255,255,.7);font-size:13px;line-height:1.75;font-weight:300;text-wrap:balance}
+  .trust b{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--gold-soft);font-size:17px}
+
+  footer{margin-top:30px;border-radius:18px;padding:24px 22px;text-align:center;
+    background:rgba(10,20,30,.5);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  footer .ttl{display:block;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:500}
+  footer p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.72);font-weight:300}
+  footer p b{color:var(--gold-soft);font-weight:500}
+  .morebtn{display:inline-block;margin-top:16px;padding-top:15px;border-top:1px solid rgba(236,217,168,.18);
+    font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.6);font-weight:300;transition:color .3s var(--ease-out)}
+  .morebtn b{color:var(--gold);font-weight:500}
+  .morebtn:hover{color:rgba(255,255,255,.85)}
+
+  .demo{position:fixed;left:0;right:0;bottom:0;z-index:9000;text-align:center;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.12em;
+    padding:8px 10px;text-transform:uppercase}
+
+  .rv{opacity:0;transform:translateY(14px);transition:opacity .45s var(--ease-out),transform .45s var(--ease-out)}
+  .rv.show{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;filter:none;transition:none}
+    .bubbles span,.codecard::before,.pk-bg,.book::after,.pk.show .pk-glint{animation:none}
+    .pk-glint{display:none}
+  }
+
+  .howto{margin:36px 4px 0;text-align:left}
+  .howto .ttl{display:block;text-align:center;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;font-weight:500}
+  .howto ol{list-style:none;counter-reset:step;display:grid;gap:18px;margin:0;padding:0}
+  .howto li{counter-increment:step;position:relative;padding:1px 0 0 42px;min-height:27px;font-size:13px;line-height:1.5;color:rgba(255,255,255,.82);font-weight:300}
+  .howto li::before{content:counter(step);position:absolute;left:0;top:0;width:27px;height:27px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:15px;
+    color:var(--gold-soft);border:1px solid rgba(236,217,168,.4);background:rgba(236,217,168,.06)}
+  .howto li b{color:var(--gold-soft);font-weight:500}
+  .howto .note{margin:24px 2px 0;font-size:11.5px;line-height:1.6;color:rgba(255,255,255,.6);font-weight:300;text-align:center}
+  .howto .note b{color:var(--gold-soft);font-weight:500}
+  footer p a{color:var(--gold);font-weight:500;text-decoration:none;border-bottom:1px solid rgba(236,217,168,.45);transition:border-color .3s var(--ease-out)}
+  footer p a:hover{border-color:var(--gold)}
+</style>
+</head>
+<body>
+  <div class="ocean"></div>
+  <div class="bubbles" id="bubbles"></div>
+
+  <div class="wrap">
+    <header>
+      <img class="rv logo" src="/assets/logo.png" alt="Calypso Diving Centre, Gozo Malta, established 1985"/>
+    </header>
+
+    <section class="hero">
+      <div class="rv eyebrow">Calypso Diving Centre</div>
+      <h1 class="rv">Our Adam sorted you<br>a little <i>something</i>.</h1>
+      <p class="rv">Diving Gozo this season? You've got <b>10% off</b> our dive packages, just for the crew. The blue's waiting.</p>
+      <div class="rv coop">
+        <span class="lbl">Exclusively for</span>
+        <span class="name">military divers</span>
+      </div>
+    </section>
+
+    <div class="rv codecard">
+      <div class="lbl">Your code</div>
+      <div class="code" id="code">&nbsp;</div>
+      <div class="sub">10% off dive packages</div>
+      <button class="copybtn" id="copybtn" type="button"><span id="copytxt">Tap to copy</span></button>
+      <a class="ratesbtn" href="https://www.calypsodivers.com/gozo-diving-prices-booking" target="_blank" rel="noopener">Or browse <b>all rates &amp; book &rarr;</b></a>
+    </div>
+
+    <div class="rv howto">
+      <span class="ttl">How to use your code</span>
+      <ol>
+        <li><b>Copy</b> your code above. Just one tap.</li>
+        <li>Pick a package and tap <b>Book&nbsp;now</b>.</li>
+        <li>Add your <b>arrival &amp; departure dates</b> and certification level, then <b>Add to cart</b>.</li>
+        <li><b>Paste</b> the code at checkout. That's where your 10% comes off.</li>
+      </ol>
+      <p class="note">Heads up: on our <b>booking site</b> you'll first see the full price &mdash; paste <b>your code</b> at checkout and the <b>10%</b> comes off, bringing you to the prices you see here.</p>
+    </div>
+
+    <div class="pickhead">
+      <div class="rv eyebrow">Pick your pack</div>
+      <h2 class="rv">Guided <i>dive</i> packages</h2>
+      <p class="rv">Every price below already includes your 10%.</p>
+    </div>
+
+    <!-- 10 dives — featured -->
+    <a class="rv pk feat" href="https://www.calypsodivers.com/product-page/10-dives-package-1" target="_blank" rel="noopener" aria-label="10 Dives Pack, best value, was 369 euro, now 332.10 euro with the military rate. Book now.">
+      <i class="pk-bg" style="background-image:url('/assets/foto/adam-10dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="glowfollow"></span>
+      <span class="pk-glint"></span>
+      <div class="ribbon">Best value</div>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for military divers</span>
+        <div class="pk-toprow"><span class="pk-rate">&euro;33.21 / dive</span><span class="save">save &euro;36.90</span></div>
+        <div class="pk-title">10 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air &amp; weights</li>
+          <li>Drinking water</li>
+          <li>Site transport</li>
+          <li>PADI &middot; SSI guide</li>
+        </ul>
+        <div class="pricerow"><span class="new"><span class="cur">&euro;</span>332.10</span><span class="old">&euro;369</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 6 dives -->
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/6-dives-package-1" target="_blank" rel="noopener" aria-label="6 Dives Pack, was 240 euro, now 216 euro with the military rate. Book now.">
+      <i class="pk-bg" style="background-image:url('/assets/foto/adam-6dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="pk-glint"></span>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for military divers</span>
+        <div class="pk-toprow"><span class="pk-rate">&euro;36 / dive</span><span class="save">save &euro;24.00</span></div>
+        <div class="pk-title">6 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air &amp; weights</li>
+          <li>Drinking water</li>
+          <li>Site transport</li>
+          <li>PADI &middot; SSI guide</li>
+        </ul>
+        <div class="pricerow"><span class="new"><span class="cur">&euro;</span>216.00</span><span class="old">&euro;240</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 4 dives -->
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/4-dives-package-1" target="_blank" rel="noopener" aria-label="4 Dives Pack, was 169 euro, now 152.10 euro with the military rate. Book now.">
+      <i class="pk-bg" style="background-image:url('/assets/foto/adam-4dives.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="pk-glint"></span>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for military divers</span>
+        <div class="pk-toprow"><span class="pk-rate">&euro;38 / dive</span><span class="save">save &euro;16.90</span></div>
+        <div class="pk-title">4 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air &amp; weights</li>
+          <li>Drinking water</li>
+          <li>Site transport</li>
+          <li>PADI &middot; SSI guide</li>
+        </ul>
+        <div class="pricerow"><span class="new"><span class="cur">&euro;</span>152.10</span><span class="old">&euro;169</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <!-- family 40 -->
+    <a class="rv pk" href="https://www.calypsodivers.com/product-page/family-package-of-40-dives-1" target="_blank" rel="noopener" aria-label="Family 40 Dives, was 1390 euro, now 1251 euro with the military rate. Book now.">
+      <i class="pk-bg" style="background-image:url('/assets/foto/adam-family.jpg')"></i>
+      <div class="pk-veil"></div>
+      <span class="pk-glint"></span>
+      <div class="pk-content">
+        <span class="pk-coop">Exclusive for military divers</span>
+        <div class="pk-toprow"><span class="pk-rate">&euro;31.28 / dive</span><span class="save">save &euro;139.00</span></div>
+        <div class="pk-title">Family &middot; 40 Dives</div>
+        <div class="pk-inc-label">Price includes</div>
+        <ul class="pk-inc">
+          <li>Air &amp; weights</li>
+          <li>Drinking water</li>
+          <li>Site transport</li>
+          <li>Shared by all</li>
+        </ul>
+        <div class="pricerow"><span class="new"><span class="cur">&euro;</span>1251.00</span><span class="old">&euro;1390</span></div>
+        <span class="book">Book now &rarr;</span>
+      </div>
+    </a>
+
+    <p class="rv trust">
+      <b>Diving Gozo since 1985.</b><br>
+      SSI &amp; PADI &middot; a small, friendly crew &middot; the Mediterranean at its best.
+    </p>
+
+    <footer class="rv">
+      <span class="ttl">Rather sort it with a human?</span>
+      <p>Planning your trip and you'd sooner not book online? Just <a href="mailto:info@calypsodivers.com?subject=Military rate (ADAM10)">drop us an email</a> and we'll set you up with your military rate directly. No checkout, no fuss, just a real person sorting you out. See you in the blue.</p>
+      <a class="morebtn" href="https://www.calypsodivers.com" target="_blank" rel="noopener">More about us &middot; <b>calypsodivers.com &rarr;</b></a>
+    </footer>
+  </div>
+
+
+<script>
+  (function(){
+    var b=document.getElementById('bubbles'); if(!b) return;
+    if(window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+    for(var i=0;i<13;i++){
+      var s=document.createElement('span');
+      var size=4+Math.random()*22;
+      s.style.width=s.style.height=size.toFixed(1)+'px';
+      s.style.left=(Math.random()*100).toFixed(1)+'%';
+      var dur=13+Math.random()*10;
+      s.style.animationDuration=dur.toFixed(1)+'s';
+      s.style.animationDelay=(-Math.random()*dur).toFixed(1)+'s';
+      var depth=size/26;
+      s.style.opacity=(0.3+depth*0.45).toFixed(2);
+      b.appendChild(s);
+    }
+  })();
+  (function(){
+    var C=atob('QURBTTEw'); /* code stored encoded, not in plain text */
+    var el=document.getElementById('code'); if(el){ el.textContent=C; }
+    var el2=document.getElementById('code2'); if(el2){ el2.textContent=C; }
+    var btn=document.getElementById('copybtn'), txt=document.getElementById('copytxt');
+    btn.addEventListener('click',function(){
+      var done=function(){ txt.textContent='Copied'; setTimeout(function(){txt.textContent='Tap to copy';},1800); };
+      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(C).then(done).catch(done); }
+      else{ var t=document.createElement('textarea'); t.value=C; document.body.appendChild(t); t.select();
+        try{document.execCommand('copy');}catch(e){} document.body.removeChild(t); done(); }
+    });
+  })();
+  (function(){
+    var items=document.querySelectorAll('.rv');
+    if(!('IntersectionObserver' in window)){ items.forEach(function(el){el.classList.add('show');}); return; }
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+    },{threshold:.01,rootMargin:'0px 0px 14% 0px'});
+    items.forEach(function(el,i){ el.style.transitionDelay=((i%4)*45)+'ms'; io.observe(el); });
+  })();
+  (function(){
+    var f=document.querySelector('.pk.feat');
+    if(!f||!window.matchMedia||!matchMedia('(hover:hover)').matches)return;
+    f.addEventListener('pointermove',function(e){
+      var r=f.getBoundingClientRect();
+      f.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+      f.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+    });
+  })();
+</script>
+</body>
+</html>
