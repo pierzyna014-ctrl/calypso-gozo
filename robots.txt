@@ -1,0 +1,11 @@
+# Strona-voucher Adam — ukryta przed wyszukiwarkami,
+# ale roboty podgladow linkow (Meta / WhatsApp / Messenger) maja wstep wolny.
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: *
+Allow: /
